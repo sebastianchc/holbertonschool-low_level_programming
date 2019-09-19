@@ -9,14 +9,14 @@
 
 int main(void)
 {
-        int num;
+	int num;
 
-        num = 0;
-        while (num <= 9)
-        {
-                printf("%d", num);
-                num++;
-        }
-        printf("\n");
-        return (0);
+	num = 48;
+	while (num <= 57)
+	{
+		putchar(num);
+		num++;
+	}
+	printf("\n");
+	return (0);
 }
