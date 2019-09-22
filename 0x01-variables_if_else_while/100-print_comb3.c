@@ -9,29 +9,22 @@
 
 int main(void)
 {
-	int num1;
-	int num2;
-	int num3;
+	int x;
 
-	num1 = 0;
-	num2 = 1;
-	num3 = 1;
-	while (num1 <= 9)
+	x = 1;
+	while (x <= 89)
 	{
-		while (num2 <= 9)
+		if ((x % 10) > (x / 10))
 		{
-			putchar(num1 + '0');
-			putchar(num2 + '0');
-			if (!(num1 == 8 && num2 == 9))
+			putchar((x / 10) + '0');
+			putchar((x % 10) + '0');
+			if (x < 89)
 			{
 				putchar(',');
 				putchar(' ');
 			}
-			num2++;
 		}
-		num1++;
-		num3++;
-		num2 = num3;
+		x++;
 	}
 	putchar('\n');
 	return (0);
