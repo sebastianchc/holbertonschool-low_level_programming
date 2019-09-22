@@ -9,19 +9,19 @@
 
 int main(void)
 {
-	int num;
+	int x;
 
-	num = 0;
-	while (num <= 99)
+	x = 0;
+	while (x <= 99)
 	{
-		putchar((num / 10) + '0');
-		putchar((num % 10) + '0');
-		if (num < 99)
+		putchar((x / 10) + '0');
+		putchar((x % 10) + '0');
+		if (x < 99)
 		{
 			putchar(',');
 			putchar(' ');
 		}
-		num++;
+		x++;
 	}
 	putchar('\n');
 	return (0);
