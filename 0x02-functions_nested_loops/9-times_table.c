@@ -2,7 +2,7 @@
 #include "holberton.h"
 
 /**
- * _times_table - writes the character c to stdout
+ * times_table - writes the character c to stdout
  *
  * Return: On success 1.
  * On error, 0 is returned.
