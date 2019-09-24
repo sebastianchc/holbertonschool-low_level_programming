@@ -47,3 +47,13 @@ void jack_bauer(void);
 #define _TABLE_H
 void times_table(void);
 #endif
+
+#ifndef _ADD_H
+#define _ADD_H
+int add(int c, int n);
+#endif
+
+#ifndef _PRINT98_H
+#define _PRINT98_H
+void print_to_98(int n);
+#endif
