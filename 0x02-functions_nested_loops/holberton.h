@@ -27,3 +27,23 @@ int _isalpha(int c);
 #define _SIGN_H
 int print_sign(int n);
 #endif
+
+#ifndef _ABS_H
+#define _ABS_H
+int _abs(int c);
+#endif
+
+#ifndef _PLASTD_H
+#define _PLASTD_H
+int print_last_digit(int c);
+#endif
+
+#ifndef _HOUR_H
+#define _HOUR_H
+void jack_bauer(void);
+#endif
+
+#ifndef _TABLE_H
+#define _TABLE_H
+void times_table(void);
+#endif
