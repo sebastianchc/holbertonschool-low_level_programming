@@ -25,4 +25,5 @@ int main(void)
 		x = w;
 	}
 	printf("\n");
+	return (0);
 }
