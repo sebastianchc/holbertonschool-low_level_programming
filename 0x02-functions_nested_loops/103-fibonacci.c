@@ -1,4 +1,3 @@
-#iclude "holberton.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -15,18 +14,16 @@ int main(void)
 	x = 1;
 	y = 0;
 	v = 0;
-	w = 0;
-	while (w < 4000000)
+	for (z = 0; z <= 50; z++)
 	{
-		w = x + y;
+		w = x +y;
 		y = x;
 		x = w;
-		if (w % 2 == 0)
+		if (w % 2 == 0 && w < 4000000)
 		{
 			v = v + w;
 		}
 	}
-	printf("%ld", v);
-	printf("\n");
+	printf("%ld\n", v);
 	return (0);
 }
