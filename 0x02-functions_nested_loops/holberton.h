@@ -57,3 +57,8 @@ int add(int c, int n);
 #define _PRINT98_H
 void print_to_98(int n);
 #endif
+
+#ifndef _PTABLE_H
+#define _PTABLE_H
+void print_times_table(int n);
+#endif
