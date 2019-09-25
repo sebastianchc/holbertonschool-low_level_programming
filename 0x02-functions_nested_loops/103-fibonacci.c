@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * main - Entry point
+ * fibonacci - Entry point
  *
  * Return: Always 0 (Success)
  */
