@@ -16,7 +16,7 @@ int main(void)
 	v = 0;
 	for (z = 0; z <= 50; z++)
 	{
-		w = x +y;
+		w = x + y;
 		y = x;
 		x = w;
 		if (w % 2 == 0 && w < 4000000)
