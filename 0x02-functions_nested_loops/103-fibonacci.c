@@ -1,22 +1,31 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+
 int main(void)
 {
 	unsigned long v, w, x, y, z;
 
-        x = 1;
-        y = 0;
+	x = 1;
+	y = 0;
 	v = 0;
-        for (z = 0; z <= 49; z++)
-        {
-		
-		while (w < 4000000)
+	w = 0;
+	while (w < 4000000)
+	{
+		w = x + y;
+		y = x;
+		x = w;
+		if (w % 2 == 0)
 		{
-			w = x + y;
-			y = x;
-			x = w;
+			v = v + w;
 		}
-        }
-        printf("\n");
+	}
+	printf("%ld", v);
+	printf("\n");
+	return (0);
 }
