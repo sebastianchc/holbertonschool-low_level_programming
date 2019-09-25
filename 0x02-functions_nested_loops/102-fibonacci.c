@@ -1,6 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */x
+
 int main(void)
 {
 	unsigned long w, x, y, z;
