@@ -1,8 +1,9 @@
+#iclude "holberton.h"
 #include <stdio.h>
 #include <stdlib.h>
 
 /**
- * fibonacci - Entry point
+ * main - Entry point
  *
  * Return: Always 0 (Success)
  */
