@@ -29,7 +29,10 @@ int main(void)
 		{
 			printf("%d", x);
 		}
-		printf(" ");
+		if (x != 100)
+		{
+			printf(" ");
+		}
 	}
 	printf("\n");
 	return (0);
