@@ -31,4 +31,4 @@ void print_number(int n)
 		_putchar((n / w) + '0');
 		n = n % w;
 	}
-}
+}i
