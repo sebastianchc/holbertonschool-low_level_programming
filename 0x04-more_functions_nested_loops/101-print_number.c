@@ -1,27 +1,34 @@
 #include "holberton.h"
-#include <stdio.h>
-#include <stdlib.h>
 
-int main(void)
+/**
+ * print_number - Print number.
+ * @n: variable.
+ *
+ * Return: Nothing.
+ */
+
+void print_number(int n)
 {
-	int a, z, y, d, x, b, c;
+	int y;
 
-	a = 1052;
-	z = 1052;
-	for (a = z; a > 0; )
+	y = 10;
+	if (n == 0)
 	{
-		for (y = 0; d > 10; y * 10)
-		{
-			for (a = 1052; a != 0; )
-			{
-				a = a / x;
-				b = a % x;
-			}
-			putchar(b + '0');
-			d = z / y;
-			c = z % y;
-		}
-		c = z;
+		_putchar(n + '0');
 	}
-	return (0);
+	if (n < 0)
+	{
+		n = n * (-1);
+		_putchar('-');
+	}
+	while (n > 0)
+	{
+		while (n / y > 0)
+		{
+			y = y * 10;
+		}
+		y = y / 10;
+		_putchar((n / y) + '0');
+		n = n % y;
+	}
 }
