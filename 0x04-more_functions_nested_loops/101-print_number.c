@@ -9,9 +9,9 @@
 
 void print_number(int n)
 {
-	int y;
+	int w;
 
-	y = 10;
+	w = 10;
 	if (n == 0)
 	{
 		_putchar(n + '0');
@@ -23,12 +23,12 @@ void print_number(int n)
 	}
 	while (n > 0)
 	{
-		while (n / y > 0)
+		while (n / w > 0)
 		{
-			y = y * 10;
+			w = w * 10;
 		}
-		y = y / 10;
-		_putchar((n / y) + '0');
-		n = n % y;
+		w = w / 10;
+		_putchar((n / w) + '0');
+		n = n % w;
 	}
 }
