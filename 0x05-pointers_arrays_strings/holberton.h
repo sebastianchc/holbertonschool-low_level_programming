@@ -37,3 +37,18 @@ void rev_string(char *s);
 #define _PUTS2_H
 void puts2(char *str);
 #endif
+
+#ifndef _PUTHALF_H
+#define _PUTHALF_H
+void puts_half(char *str);
+#endif
+
+#ifndef _PARRAY_H
+#define _PARRAY_H
+void print_array(int *a, int n);
+#endif
+
+#ifndef _STRCP_H
+#define _STRCP_H
+char *_strcpy(char *dest, char *src);
+#endif
