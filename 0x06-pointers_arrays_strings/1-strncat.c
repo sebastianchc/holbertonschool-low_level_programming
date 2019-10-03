@@ -25,5 +25,5 @@ char *_strncat(char *dest, char *src, int n)
 		x++;
 		y++;
 	}
-        return (dest);
+	return (dest);
 }
