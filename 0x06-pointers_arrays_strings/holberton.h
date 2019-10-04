@@ -30,5 +30,5 @@ void reverse_array(int *a, int n);
 
 #ifndef _STOPR_H
 #define _STOPR_H
-char *string_toupper(char *n)
+char *string_toupper(char *n);
 #endif
