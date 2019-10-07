@@ -20,7 +20,7 @@ unsigned int _strspn(char *s, char *accept)
 		{
 			if (s[y] == accept[z])
 			{
-				x = x + 1;
+				x++;
 			}
 			z++;
 		}
