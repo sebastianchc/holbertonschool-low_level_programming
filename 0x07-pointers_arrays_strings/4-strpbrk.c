@@ -14,8 +14,6 @@ char *_strpbrk(char *s, char *accept)
 
 	x = 0;
 	y = 0;
-	z = 0;
-	w = 0;
 	while (s[x] != '\0')
 	{
 		x++;
@@ -24,17 +22,20 @@ char *_strpbrk(char *s, char *accept)
 	{
 		y++;
 	}
-	while (z <= x)
+	z = 0;
+	while (z < x)
 	{
-		while (w <= y)
+		w = 0;
+		while (w < y)
 		{
 			if (s[z] == accept[w])
 			{
-				return (s + w);
+				return (s + z);
 			}
 			w++;
 		}
 		z++;
+		s++;
 	}
 	return (0);
 }
