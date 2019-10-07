@@ -1,1 +1,1 @@
-In this project we will learn how the gcc compiler works and its process.
+In this project we will learn how the gcc compiler works and its process..
