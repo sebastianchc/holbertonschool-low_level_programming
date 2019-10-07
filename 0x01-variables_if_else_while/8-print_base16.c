@@ -2,27 +2,27 @@
 #include <stdlib.h>
 
 /**
- * main - Entry point
+ * main - Base 16.
  *
- * Return: Always 0 (Success)
+ * Return: Always 0.
  */
 
 int main(void)
 {
-	char base1;
-	char base6;
+	char x;
+	char y;
 
-	base1 = 48;
-	while (base1 <= 57)
+	x = 48;
+	while (x <= 57)
 	{
-		putchar(base1);
-		base1++;
+		putchar(x);
+		x++;
 	}
-	base6 = 'a';
-	while (base6 <= 'f')
+	y = 'a';
+	while (y <= 'f')
 	{
-		putchar(base6);
-		base6++;
+		putchar(y);
+		y++;
 	}
 	putchar('\n');
 	return (0);

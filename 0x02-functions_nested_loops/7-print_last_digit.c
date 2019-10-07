@@ -2,11 +2,10 @@
 #include "holberton.h"
 
 /**
- * print_last_digit - writes the character c to stdout
- * @c: The character to print
+ * print_last_digit - Get Last Digit.
+ * @c: Variable.
  *
- * Return: On success 1.
- * On error, 0 is returned.
+ * Return: Last Digit.
  */
 
 int print_last_digit(int c)

@@ -2,11 +2,10 @@
 #include "holberton.h"
 
 /**
- * _islower - writes the character c to stdout
- * @c: The character to print
+ * _islower - Lower.
+ * @c: Variable.
  *
- * Return: On success 1.
- * On error, 0 is returned.
+ * Return: 1 if is lower 0 otherwise.
  */
 
 int _islower(int c)

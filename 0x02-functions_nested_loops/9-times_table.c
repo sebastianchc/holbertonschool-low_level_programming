@@ -2,10 +2,9 @@
 #include "holberton.h"
 
 /**
- * times_table - writes the character c to stdout
+ * times_table - Times Tables n.
  *
- * Return: On success 1.
- * On error, 0 is returned.
+ * Return: Nothing.
  */
 
 void times_table(void)

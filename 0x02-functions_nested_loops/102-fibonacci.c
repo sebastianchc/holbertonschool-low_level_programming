@@ -2,9 +2,9 @@
 #include <stdlib.h>
 
 /**
- * main - Entry point
+ * main - Fibonacci.
  *
- * Return: Always 0 (Success)
+ * Return: Always 0.
  */
 
 int main(void)

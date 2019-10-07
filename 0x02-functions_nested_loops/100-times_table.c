@@ -2,11 +2,10 @@
 #include "holberton.h"
 
 /**
- * print_times_table - writes the character c to stdout
- * @n: The character to print
+ * print_times_table - Print Tables n.
+ * @n: Variable.
  *
- * Return: On success 1.
- * On error, 0 is returned.
+ * Return: Nothing.
  */
 
 void print_times_table(int n)
@@ -52,4 +51,3 @@ void print_times_table(int n)
 		}
 	}
 }
-d

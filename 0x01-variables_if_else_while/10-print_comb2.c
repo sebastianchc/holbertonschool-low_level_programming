@@ -2,9 +2,9 @@
 #include <stdlib.h>
 
 /**
- * main - Entry point
+ * main - From 00 to 99.
  *
- * Return: Always 0 (Success)
+ * Return: Always 0.
  */
 
 int main(void)

@@ -2,9 +2,9 @@
 #include "holberton.h"
 
 /**
- * print_alphabet - writes the character c to stdout
+ * print_alphabet - Alphabet.
  *
- * Return: On success 0.
+ * Return: Nothing-
  */
 
 void print_alphabet(void)

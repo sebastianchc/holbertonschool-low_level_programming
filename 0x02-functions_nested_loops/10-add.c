@@ -2,12 +2,11 @@
 #include "holberton.h"
 
 /**
- * add - writes the character c to stdout
- * @c: The character to print
- * @n: The character to print
+ * add - Return add.
+ * @c: Variable.
+ * @n: Variable.
  *
- * Return: On success 1.
- * On error, 0 is returned.
+ * Return: Add.
  */
 
 int add(int c, int n)

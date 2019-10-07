@@ -2,10 +2,9 @@
 #include "holberton.h"
 
 /**
- * jack_bauer - writes the character c to stdout
+ * jack_bauer - Hours.
  *
- * Return: On success 1.
- * On error, 0 is returned.
+ * Return: Nothing.
  */
 
 void jack_bauer(void)

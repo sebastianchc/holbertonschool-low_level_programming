@@ -1,21 +1,23 @@
 #include <stdio.h>
+
 /**
- * main - Entry point
+ * main - Variables Size.
  *
- * Return: Always 0 (Success)
+ * Return: Always 0.
  */
+
 int main(void)
 {
-	char C;
-	int I;
-	long int L;
-	long long int LL;
-	float F;
+	char c;
+	int i;
+	long int l;
+	long long int ll;
+	float f;
 
-	printf("Size of a char: %ld byte(s)\n", sizeof(C));
-	printf("Size of an int: %ld byte(s)\n", sizeof(I));
-	printf("Size of a long int: %ld byte(s)\n", sizeof(L));
-	printf("Size of a long long int: %ld byte(s)\n", sizeof(LL));
-	printf("Size of a float: %ld byte(s)\n", sizeof(F));
+	printf("Size of a char: %ld byte(s)\n", sizeof(c));
+	printf("Size of an int: %ld byte(s)\n", sizeof(i));
+	printf("Size of a long int: %ld byte(s)\n", sizeof(l));
+	printf("Size of a long long int: %ld byte(s)\n", sizeof(ll));
+	printf("Size of a float: %ld byte(s)\n", sizeof(f));
 	return (0);
 }

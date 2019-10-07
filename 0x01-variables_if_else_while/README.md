@@ -1,1 +1,1 @@
-If, else and while.
+In this project we will learn to use variables, the If conditional and the For and While loops.

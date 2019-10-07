@@ -1,1 +1,1 @@
-DEBBUGING
+In this project we will learn the process of finding and fixing errors in software called Debbuging.
