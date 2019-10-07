@@ -32,10 +32,13 @@ char *_strpbrk(char *s, char *accept)
 			{
 				return (s + z);
 			}
+			else if (s[z] != accept[w] && s[z] == '\0')
+			{
+				return (0);
+			}
 			w++;
 		}
 		z++;
-		s++;
 	}
 	return (0);
 }
