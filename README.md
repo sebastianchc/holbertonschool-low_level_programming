@@ -1,1 +1,1 @@
-C
+In this repository we will learn to program C.
