@@ -2,11 +2,10 @@
 #include "holberton.h"
 
 /**
- * _isalpha - writes the character c to stdout
- * @c: The character to print
+ * _isalpha - Letter.
+ * @c: Variable.
  *
- * Return: On success 1.
- * On error, 0 is returned.
+ * Return: 1 if is letter 0 otherwise.
  */
 
 int _isalpha(int c)

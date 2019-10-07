@@ -4,11 +4,10 @@
 #include "holberton.h"
 
 /**
- * print_to_98 - writes the character c to stdout
- * @n: The character to print
+ * print_to_98 - From n To 98.
+ * @n: Variable.
  *
- * Return: On success 1.
- * On error, 0 is returned.
+ * Return: Nothing.
  */
 
 void print_to_98(int n)

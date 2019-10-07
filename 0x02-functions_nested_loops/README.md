@@ -1,1 +1,1 @@
-Nested Loops and Funtions.
+In this project we will learn to use functions, define and declare them, in addition to using nested loops.

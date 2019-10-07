@@ -2,11 +2,10 @@
 #include "holberton.h"
 
 /**
- * print_sign - writes the character c to stdout
- * @n: The character to print
+ * print_sign - Positive or Negative.
+ * @n: Variable.
  *
- * Return: On success 1.
- * On error, 0 is returned.
+ * Return: 1 positive, -1 negative.
  */
 
 int print_sign(int n)

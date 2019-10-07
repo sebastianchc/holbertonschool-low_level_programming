@@ -2,11 +2,10 @@
 #include "holberton.h"
 
 /**
- * _abs - writes the character c to stdout
- * @c: The character to print
+ * _abs - Absolute Value of Number.
+ * @c: Variable.
  *
- * Return: On success 1.
- * On error, 0 is returned.
+ * Return: Absolute Value.
  */
 
 int _abs(int c)
