@@ -23,10 +23,10 @@ char *_strpbrk(char *s, char *accept)
 		y++;
 	}
 	z = 0;
-	while (z < x)
+	while (z <= x)
 	{
 		w = 0;
-		while (w < y)
+		while (w <= y)
 		{
 			if (s[z] == accept[w])
 			{
