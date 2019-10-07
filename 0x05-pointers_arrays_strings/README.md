@@ -1,1 +1,1 @@
-gh hb
+In this project we will learn about Pointers, Arrays and Strings their differences and uses.
