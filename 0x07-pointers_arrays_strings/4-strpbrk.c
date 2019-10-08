@@ -5,28 +5,27 @@
  * @s: Varible.
  * @accept: Variable.
  *
- * Return: Return: Pointer to the first occurence in the set of chars.
- * NULL if any character is found.
+ * Return: s + x, 0 otherwise.
  */
 
 char *_strpbrk(char *s, char *accept)
 {
-	int i = 0;
-	int j;
+	int x;
+	int y;
 
-	while (s[i])
+	x = 0;
+	while (s[x])
 	{
 		j = 0;
-		while (accept[j])
+		while (accept[y])
 		{
-			if (s[i] == accept[j])
+			if (s[x] == accept[y])
 			{
-				return (s + i);
+				return (s + x);
 			}
-			j++;
+			y++;
 		}
-		i++;
+		x++;
 	}
-
 	return (0);
 }
