@@ -33,7 +33,18 @@ char *_strpbrk(char *s, char *accept);
 char *_strstr(char *haystack, char *needle);
 #endif
 
+#ifndef _PCHESS_H
+#define _PCHESS_H
+void print_chessboard(char (*a)[8]);
+#endif
+
+#ifndef _PDIAG_H
+#define _PDIAG_H
+void print_diagsums(int *a, int size);
+#endif
+
 #ifndef _SETSTR_H
 #define _SETSTR_H
 void set_string(char **s, char *to);
 #endif
+
