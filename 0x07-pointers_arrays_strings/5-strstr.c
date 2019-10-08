@@ -18,15 +18,15 @@ char *_strstr(char *haystack, char *needle)
 	{
 		while (needle[y])
 		{
-			if (haystack[x] != needle[y])
+			if (haystack[x + y] != needle[y])
 			{
 				break;
 			}
-			else if (haystack[x] == needle[y])
-			{
-				return (haystack + x);
-			}
 			y++;
+		}
+		if (!needle[y])
+		{
+			return (haystack + x);
 		}
 		x++;
 	}
