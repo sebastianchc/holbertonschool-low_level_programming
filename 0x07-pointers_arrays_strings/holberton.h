@@ -22,3 +22,18 @@ char *_strchr(char *s, char c);
 #define _STRSPN_H
 unsigned int _strspn(char *s, char *accept);
 #endif
+
+#ifndef _STRBRK_H
+#define _STRBRK_H
+char *_strpbrk(char *s, char *accept);
+#endif
+
+#ifndef _STRSTR_H
+#define _STRSTR_H
+char *_strstr(char *haystack, char *needle);
+#endif
+
+#ifndef _SETSTR_H
+#define _SETSTR_H
+void set_string(char **s, char *to);
+#endif
