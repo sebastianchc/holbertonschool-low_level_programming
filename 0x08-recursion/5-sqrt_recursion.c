@@ -2,13 +2,15 @@
 
 /**
  * _square_root - Count.
+ * @x: Variable.
+ * @n: Variable.
  *
  * Return: square root.
  */
 
 int _square_root(int x, int n)
 {
-       	if (x * x <= n)
+	if (x * x <= n)
 	{
 		if (x * x == n)
 		{
