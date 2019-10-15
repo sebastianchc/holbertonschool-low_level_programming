@@ -2,6 +2,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+ * str_concat - check the code for Holberton School students.
+ * @s1: df
+ * @s2: vfdf
+ *
+ * Return: Always 0.
+ */
+
 char *str_concat(char *s1, char *s2)
 {
 	char *array;
