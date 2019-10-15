@@ -14,7 +14,16 @@ char *str_concat(char *s1, char *s2)
 {
 	char *array;
 	int w, x, y, z;
+	char *a = '';
 
+	if (s1 == NULL)
+	{
+		s1 = a;
+	}
+	if (s2 == NULL)
+	{
+		s2 = a;
+	}
 	x = 0;
 	while (s1[x])
 	{
