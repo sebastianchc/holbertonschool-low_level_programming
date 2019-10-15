@@ -13,14 +13,10 @@ int main(int argc, char **argv)
 {
 	int x;
 
-	if (argc)
+	while (argc)
 	{
-		x = 0;
-		while (argv)
-		{
-			printf("%s\n", *(argv + x));
-			x++;
-		}
+		printf("%s\n", *(argv + x));
+		x++;
 	}
 	return (0);
 }
