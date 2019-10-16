@@ -34,7 +34,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		y++;
 	}
-	array = malloc((x + y) *  sizeof(char));
+	array = malloc((x + y + 1) *  sizeof(char));
 	z = 0;
 	while (z < x)
 	{
