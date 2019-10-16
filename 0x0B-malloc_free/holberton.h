@@ -22,3 +22,8 @@ char *str_concat(char *s1, char *s2);
 #define _ALLGRD_H
 int **alloc_grid(int width, int height);
 #endif
+
+#ifndef _FREEGR_H
+#define _FREEGR_H
+void free_grid(int **grid, int height);
+#endif
