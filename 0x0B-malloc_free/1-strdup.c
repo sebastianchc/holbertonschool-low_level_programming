@@ -14,7 +14,7 @@ char *_strdup(char *str)
 	char *array;
 	int x, y;
 
-	if (str == NULL)
+	if (!str)
 	{
 		return (0);
 	}
@@ -24,6 +24,10 @@ char *_strdup(char *str)
 		x++;
 	}
 	array = malloc((x + 1) *  sizeof(char));
+	if (!array)
+	{
+		return (0);
+	}
 	y = 0;
 	while (y < x)
 	{
