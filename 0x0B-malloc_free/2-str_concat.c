@@ -3,50 +3,52 @@
 #include <stdlib.h>
 
 /**
- * str_concat - check the code for Holberton School students.
- * @s1: df
- * @s2: vfdf
+ * str_concat - Function that concatenates two strings with malloc.
+ * @s1: String 1.
+ * @s2: String 2.
  *
- * Return: Always 0.
+ * Return: Array.
  */
 
 char *str_concat(char *s1, char *s2)
 {
 	char *array;
-	int w, x, y, z;
-	char *a = "";
+	int size1, size2, i;
 
-	if (s1 == NULL)
+	if (!s1)
 	{
-		s1 = a;
+		size1 = 0;
 	}
-	if (s2 == NULL)
+	if (!s2)
 	{
-		s2 = a;
+		size2 = 0;
 	}
-	x = 0;
-	while (s1[x])
+	size1 = 0;
+	while (s1[size1])
 	{
-		x++;
+		size1++;
 	}
-	y = 0;
-	while (s2[y])
+	size2 = 0;
+	while (s2[size2])
 	{
-		y++;
+		size2++;
 	}
-	array = malloc((x + y + 1) *  sizeof(char));
-	z = 0;
-	while (z < x)
+	array = malloc((size1 + size2 + 1) *  sizeof(char));
+	i = 0;
+	while (i < (size1 + size2))
 	{
-		array[z] = s1[z];
-		z++;
+		if (i < size1)
+		{
+			array[i] = *s1;
+			s1++;
+		}
+		else if (i < (size1 + size2))
+		{
+			array[i] = *s2;
+			s2++;
+		}
+		i++;
 	}
-	w = 0;
-	while (z < (x + y))
-	{
-		array[z] = s2[w];
-		z++;
-		w++;
-	}
+	array[i] = '\0';
 	return (array);
 }
