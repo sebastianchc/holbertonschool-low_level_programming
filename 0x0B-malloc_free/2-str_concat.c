@@ -34,6 +34,10 @@ char *str_concat(char *s1, char *s2)
 		size2++;
 	}
 	array = malloc((size1 + size2 + 1) *  sizeof(char));
+	if (!array)
+	{
+		return (0);
+	}
 	i = 0;
 	while (i < (size1 + size2))
 	{
