@@ -17,14 +17,14 @@ int *array_range(int min, int max)
 
 	if (min > max)
 	{
-		return (0);
+		return (NULL);
 	}
 	array = malloc((max - min + 1) * sizeof(int));
 	if (!array)
 	{
-		return (0);
+		return (NULL);
 	}
-	i = min;
+	i = 0;
 	while (i <= max)
 	{
 		array[i] = i;
