@@ -13,6 +13,18 @@
 
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-	ptr = malloc(new_size);
+	void *array;
+
+	free(ptr);
+	ptr = malloc(old_size);
+	array = malloc(new_size);
+	if (!array)
+	{
+		return (0);
+	}
+	else
+	{
+		ptr = array;
+	}
 	return (ptr);
 }
