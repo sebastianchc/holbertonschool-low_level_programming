@@ -3,6 +3,45 @@
 #include "dog.h"
 
 /**
+ * _strdup - Function.
+ * @str: Variable.
+ *
+ * Return: Array.
+ */
+
+char *_strdup(char *str)
+{
+	char *array;
+	int x, y;
+
+	if (!str)
+	{
+		return (0);
+	}
+	x = 0;
+	while (str[x])
+	{
+		x++;
+	}
+	array = malloc((x + 1) *  sizeof(char));
+	if (!array)
+	{
+		return (0);
+	}
+	y = 0;
+	while (y < x)
+	{
+		array[y] = str[y];
+		y++;
+	}
+	return (array);
+}
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "dog.h"
+
+/**
  * new_dog - check the code for Holberton School students.
  * @name: V.
  * @age: V.
@@ -22,6 +61,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 	}
 	else
 	{
+		_strdup(name);
+		_strdup(owner);
 		(*ndog).name = name;
 		(*ndog).age = age;
 		(*ndog).owner = owner;
