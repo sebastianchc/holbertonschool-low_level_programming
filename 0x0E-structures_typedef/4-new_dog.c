@@ -61,11 +61,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 	}
 	else
 	{
-		_strdup(name);
-		_strdup(owner);
-		(*ndog).name = name;
+		(*ndog).name = _strdup(name);
 		(*ndog).age = age;
-		(*ndog).owner = owner;
+		(*ndog).owner = _strdup(owner);
 	}
 	return (ndog);
 }
