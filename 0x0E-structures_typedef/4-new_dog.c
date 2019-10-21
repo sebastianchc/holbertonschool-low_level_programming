@@ -29,7 +29,7 @@ char *_strdup(char *str)
 		return (0);
 	}
 	y = 0;
-	while (y < x)
+	while (y <= x)
 	{
 		array[y] = str[y];
 		y++;
