@@ -16,14 +16,14 @@ int main(int argc, char **argv)
 	int num1, num2, answer;
 	int (*operator)(int, int);
 
-	p1 = argv[2][0];
-	p2 = argv[2][1];
-	p3 = argv[3][0];
 	if (argc != 4)
 	{
 		printf("Error\n");
 		exit(98);
 	}
+	p1 = argv[2][0];
+	p2 = argv[2][1];
+	p3 = argv[3][0];
 	if ((p1 != '+' && p1 != '-' && p1 != '*' && p1 != '/' && p1 != '%')
 	    || (p2))
 	{
