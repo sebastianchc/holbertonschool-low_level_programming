@@ -39,3 +39,8 @@ int op_div(int a, int b);
 #define MOD
 int op_mod(int a, int b);
 #endif
+
+#ifndef OPERATOR
+#define OPERATOR
+int (*get_op_func(char *s))(int, int);
+#endif

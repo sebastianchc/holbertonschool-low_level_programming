@@ -4,8 +4,9 @@
 
 /**
  * get_op_func - Operation function
- * @op: The operator
- * @f: The function associated
+ * @s: The operator
+ *
+ * Return: Pointer.
  */
 
 int (*get_op_func(char *s))(int, int)
@@ -21,12 +22,8 @@ int (*get_op_func(char *s))(int, int)
 	int i;
 
 	i = 0;
-	while (i < 5)
+	while ((s[0] != ops[i].op[0]) && (i < 5))
 	{
-		if (s[0] = ops[i].op[0])
-		{
-			break;
-		}
 		i++;
 	}
 	return (ops[i].f);
