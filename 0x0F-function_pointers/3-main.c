@@ -12,24 +12,27 @@
 
 int main(int argc, char **argv)
 {
-	char p;
+	char p1, p2, p3;
 	int num1, num2, answer;
 	int (*operator)(int, int);
 
-	p = argv[2][0];
+	p1 = argv[2][0];
+	p2 = argv[2][1];
+	p3 = argv[3][0];
 	if (argc != 4)
 	{
 		printf("Error\n");
 		exit(98);
 	}
-	if (p != '+' && p != '-' && p != '*' && p != '/' && p != '%')
+	if ((p1 != '+' && p1 != '-' && p1 != '*' && p1 != '/' && p1 != '%')
+	    || (p2))
 	{
 		printf("Error\n");
 		exit(99);
 	}
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
-	if ((p == '/' || p == '%') && argv[3][0] == '0')
+	if ((p1 == '/' || p1 == '%') && p3 == '0')
 	{
 		printf("Error\n");
 		exit(100);
