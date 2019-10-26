@@ -51,7 +51,7 @@ void print_string(va_list list)
 	char *str;
 
 	str = va_arg(list, char *);
-	if (str)
+	if (!str)
 	{
 		str = "(nil)";
 	}
@@ -72,8 +72,7 @@ void print_all(const char * const format, ...)
 		{"c", print_char},
 		{"i", print_int},
 		{"f", print_float},
-		{"s", print_string},
-		{NULL, NULL}
+		{"s", print_string}
 	};
 	int i, j;
 	char *separator;
@@ -81,10 +80,10 @@ void print_all(const char * const format, ...)
 	va_start(list, format);
 	separator = "";
 	i = 0;
-	while (format[i])
+	while (format && format[i])
 	{
 		j = 0;
-		while (j < 5)
+		while (j < 4)
 		{
 			if (format[i] == types[j].t1[0])
 			{
