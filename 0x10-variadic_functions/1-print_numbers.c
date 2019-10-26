@@ -18,6 +18,10 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 	if (!n)
 	{
+		if (separator)
+		{
+			printf("%s\n", separator);
+		}
 		return;
 	}
 	va_start(list, n);
