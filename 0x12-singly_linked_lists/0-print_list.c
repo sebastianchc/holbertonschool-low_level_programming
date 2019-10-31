@@ -4,14 +4,14 @@
  * print_list - Print elements of a list.
  * @h: List.
  *
- * Return: Length.
+ * Return: Number of nodes.
  */
 
 size_t print_list(const list_t *h)
 {
-	int size;
+	int n_nodes;
 
-	size = 0;
+	n_nodes = 0;
 	while (h)
 	{
 		if ((*h).str)
@@ -23,7 +23,7 @@ size_t print_list(const list_t *h)
 			printf("[0] (nil)\n");
 		}
 		h = (*h).next;
-		size++;
+		n_nodes++;
 	}
-	return (size);
+	return (n_nodes);
 }
