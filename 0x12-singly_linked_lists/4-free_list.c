@@ -1,11 +1,10 @@
 #include "lists.h"
 
 /**
- * add_node_end - Add a new node at the beginning of a list.
+ * free_list - Add a new node at the beginning of a list.
  * @head: Node.
- * @str: String
  *
- * Return: Number of nodes.
+ * Return: Nothing.
  */
 
 void free_list(list_t *head)
