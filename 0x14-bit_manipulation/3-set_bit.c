@@ -25,5 +25,5 @@ int set_bit(unsigned long int *n, unsigned int index)
 		i++;
 	}
 	*n = *n | count;
-	return (*n);
+	return (1);
 }
