@@ -24,10 +24,9 @@ int clear_bit(unsigned long int *n, unsigned int index)
 		count *= 2;
 		i++;
 	}
-	if (*n ^ count)
+	if (!(*n ^ count))
 	{
-		return (1);
+		*n ^= count;
 	}
-	*n ^= count;
 	return (1);
 }
