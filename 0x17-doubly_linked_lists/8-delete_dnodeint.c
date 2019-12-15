@@ -23,18 +23,20 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	}
 	if (index == 0)
 	{
-		if(!*head)
+		crrnt = (*crrnt).next;
+		free(*head);
+		*head = crrnt;
+		if (*head)
 		{
-			return (1);
+			(**head).prev = NULL;
 		}
-		crrnt = (*crrnt).next, (*crrnt).prev = NULL, *head = crrnt;
 		return (1);
 	}
 	while (cmp < index)
 	{
 		prev = crrnt, crrnt = (*crrnt).next, cmp++;
 	}
-	crrnt = (*crrnt).next, (*prev).next = crrnt;
+	(*prev).next = (*crrnt).next, crrnt = (*crrnt).next;
 	if (crrnt)
 	{
 		(*crrnt).prev = prev;
