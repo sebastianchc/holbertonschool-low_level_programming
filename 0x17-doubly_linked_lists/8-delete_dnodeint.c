@@ -2,7 +2,7 @@
 
 /**
  * delete_dnodeint_at_index - Delete the node at index of a dlistint_t list
- * @h: Pointer to pointer to head of dlistint_t list
+ * @head: Pointer to pointer to head of dlistint_t list
  * @index: Index of the new node
  *
  * Return: 1 if it succeeded, -1 if it failed
@@ -23,6 +23,10 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	}
 	if (index == 0)
 	{
+		if(!*head)
+		{
+			return (1);
+		}
 		crrnt = (*crrnt).next, (*crrnt).prev = NULL, *head = crrnt;
 		return (1);
 	}
