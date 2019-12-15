@@ -1,40 +1,48 @@
-# 0x02. Python - import & modules
+# 0x17. C - Doubly linked lists
 
 ## Description
 What you should learn from this project:
 
-* Why Python programming is awesome (don’t forget to tweet today, with the hashtag #pythoniscool :))
-* How to import functions from another file
-* How to use imported functions
-* How to create a module
-* How to use the built-in function dir()
-* How to prevent code in your script from being executed when imported
-* How to use command line arguments with your Python programs
+* What is a doubly linked list
+* How to use doubly linked lists
+* Start to look for the right source of information without too much help
 
 ---
 
-### [0. Import a simple function from a simple file](./0-add.py)
-* Write a program that imports the function def add(a, b): from the file add_0.py and prints the result of the addition 1 + 2 = 3
+### [0. Print list](./0-print_dlistint.c)
+* Write a function that prints all elements of a dlistint_t.
 
 
-### [1. My first toolbox!](./1-calculation.py)
-* Write a program that imports functions from the file calculator_1.py, does some Maths, and prints the result.
+### [1. List length](./1-dlistint_len.c)
+* Write a function that returns the number of elements in a linked dlistint_t list.
 
 
-### [2. How to make a script dynamic!](./2-args.py)
-* Write a program that prints the number of and the list of its arguments.
+### [2. Add node](./2-add_dnodeint.c)
+* Write a function that adds a new node at the beginning of a dlistint_t list.
 
 
-### [3. Infinite addition](./3-infinite_add.py)
-* Write a program that prints the result of the addition of all arguments
+### [3. Add node at the end](./3-add_dnodeint_end.c)
+* Write a function that adds a new node at the end of a dlistint_t list.
 
 
-### [4. Who are you?](./4-hidden_discovery.py)
-* Write a program that prints all the names defined by the compiled module hidden_4.pyc (please download it locally).
+### [4. Free list](./4-free_dlistint.c)
+* Write a function that free a dlistint_t list.
 
 
-### [5. Everything can be imported](./5-variable_load.py)
-* Write a program that imports the variable a from the file variable_load_5.py and prints its value.
+### [5. Get node at index](./5-get_dnodeint.c)
+* Write a function that returns the nth node of a dlistint_t linked list.
+
+
+### [6. Sum list](./6-sum_dlistint.c)
+* Write a function that returns the sum of all the data (n) of a dlistint_t linked list.
+
+
+### [7. Insert at index](./7-insert_dnodeint.c)
+* Write a function that inserts a new node at a given position.
+
+
+### [8. Delete at index](./8-delete_dnodeint.c)
+* Write a function that deletes the node at index index of a dlistint_t linked list.
 
 ---
 
