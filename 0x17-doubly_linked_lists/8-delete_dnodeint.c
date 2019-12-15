@@ -13,7 +13,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	dlistint_t *count = *head, *crrnt = *head, *prev;
 	unsigned int test = 0, cmp = 0;
 
-	if (!*head || !*head)
+	if (!*head)
 	{
 		return (-1);
 	}
@@ -40,7 +40,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	{
 		prev = crrnt, crrnt = (*crrnt).next, cmp++;
 	}
-	crrnt = (*crrnt).next, (*prev).next = (*crrnt).next;
+	(*prev).next = (*crrnt).next, crrnt = (*crrnt).next;
 	if (crrnt)
 	{
 		(*crrnt).prev = prev;
