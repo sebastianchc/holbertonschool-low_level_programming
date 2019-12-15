@@ -13,7 +13,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	dlistint_t *count = *head, *crrnt = *head, *prev;
 	unsigned int test = 0, cmp = 0;
 
-	if (!*head)
+	if (!*head || !head)
 	{
 		return (-1);
 	}
