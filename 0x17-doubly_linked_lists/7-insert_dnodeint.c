@@ -11,15 +11,14 @@
 
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
-	dlistint_t *new, *count = *h, *current = *h, *prev;
+	dlistint_t *new, *count = *h, *next = *h, *current;
 	unsigned int test = 0, cmp = 0;
 
 	while (count)
 	{
-		count = (*count).next;
-		test++;
+		count = (*count).next, test++;
 	}
-	if (test > idx)
+	if (idx > test)
 	{
 		return (0);
 	}
@@ -29,10 +28,9 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		return (0);
 	}
 	(*new).n = n;
-	if (!idx)
+	if (idx == 0)
 	{
-		(*new).prev = NULL;
-		(*new).next = *h;
+		(*new).prev = NULL, (*new).next = *h;
 		if (*h)
 		{
 			(**h).prev = new;
@@ -42,17 +40,12 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	}
 	while (cmp < idx)
 	{
-		prev = current;
-		current = (*current).next;
-		cmp++;
+		current = next, next = (*next).next, cmp++;
 	}
-	prev = (*current).prev;
-	(*prev).next = new;
-	(*new).prev = prev;
-	(*new).next = current;
-	if (current)
+	(*new).next = next, (*new).prev = current, (*current).next = new;
+	if (next)
 	{
-		(*current).prev = new;
+		(*next).prev = new;
 	}
 	return (new);
 }
