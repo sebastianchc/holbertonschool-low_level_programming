@@ -14,22 +14,28 @@
 
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-	unsigned long int index, size = 1024;
-	hash_node_t *new = malloc(sizeof(hash_node_t));
+	unsigned long int index;
+	hash_node_t *new = NULL;
 
+	index = key_index((unsigned char *)key, ht->size);
+	new = ht->array[index];
+	while(new)
+	{
+		if (!strcmp(new->key, key))
+		{
+			new->value = strdup(value);
+			return (1);
+		}
+		new = new->next;
+	}
+	new = NULL, new = malloc(sizeof(hash_node_t));
 	if (!new)
 	{
 		return (0);
 	}
-	index = key_index((unsigned char *)key, size);
 	new->key = strdup(key);
 	new->value = strdup(value);
-	ht->array[index] = new;
-	if (!ht->array[index])
-	{
-		new->next = NULL;
-		return (1);
-	}
 	new->next = ht->array[index];
+	ht->array[index] = new;
 	return (1);
 }
