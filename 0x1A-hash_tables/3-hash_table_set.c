@@ -16,7 +16,10 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int index;
 	hash_node_t *new = NULL;
-
+	if (!ht || !key || !value)
+	{
+		return (0);
+	}
 	index = key_index((unsigned char *)key, ht->size);
 	new = ht->array[index];
 	while (new)
