@@ -25,11 +25,6 @@ hash_table_t *hash_table_create(unsigned long int size)
 	{
 		return (0);
 	}
-	while (count < size)
-	{
-		node[count] = NULL;
-		count++;
-	}
 	new->size = size;
 	new->array = node;
 	return (new);
