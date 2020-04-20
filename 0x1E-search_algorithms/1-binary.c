@@ -40,34 +40,26 @@ int binary_search(int *array, size_t size, int value)
 	int status = 0;
 
 	if (!array)
-	{
 		return (-1);
-	}
 	print_array(array, size);
 	if (value == array[idx])
-	{
 		return (idx + 1);
-	}
 	if (value > array[idx])
 	{
 		if (size == 1)
-		{
 			return (-1);
-		}
 		status = binary_search(array + idx + 1, size - idx - 1, value);
 		if (status == -1)
-		{
 			return (-1);
-		}
 		return (status += idx);
 	}
 	if (value < array[idx])
 	{
 		if (size == 1)
-		{
 			return (-1);
-		}
 		status = binary_search(array, size - (size - idx), value);
+		if (status == -1)
+			return (-1);
 		return (status);
 	}
 	return (-1);
